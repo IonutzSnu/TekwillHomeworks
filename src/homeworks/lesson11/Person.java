@@ -1,11 +1,21 @@
 package homeworks.lesson11;
 
 public class Person {
-    public Long id;
-    public String firstName;
-    public String lastNane;
+    private Long id;
+    private String firstName;
+    private String lastNane;
 
-    public Person(){
-         id++;
+    public static int p = 0;
+
+    public Person() {
+        p++;
+    }
+
+    public void setId(long cId) {
+        id = cId;
+    }
+
+    public long getId() {
+        return id;
     }
 }
